@@ -1,0 +1,58 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Página Principal";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a Banco JWT</h1>
+    <i class='fas fa-landmark' style='font-size:36px'></i>
+    <p>Tu compañero de confianza para gestionar tus finanzas.</p>
+    <button class="btn btn-primary" onclick="location.href='@Url.Page("./Register")'">Crea tu cuenta</button>
+</div>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Servicios de Banca en Línea</h5>
+                    <p class="card-text">Accede a tus cuentas, realiza transferencias, y controla tus gastos desde cualquier lugar y en cualquier momento.</p>
+                    <a href="@Url.Page("./OnlineBanking")" class="btn btn-secondary">Explora nuestros servicios</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Seguridad y Confianza</h5>
+                    <p class="card-text">Protegemos tu información personal y financiera con las mejores prácticas de seguridad y tecnología de encriptación.</p>
+                    <a href="@Url.Page("./Security")" class="btn btn-secondary">Aprende más sobre nuestra seguridad</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Asistencia y Soporte</h5>
+                    <p class="card-text">Nuestro equipo de atención al cliente está disponible 24/7 para ayudarte con cualquier consulta o problema.</p>
+                    <a href="@Url.Page("./Support")" class="btn btn-secondary">Contacta con soporte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h2 class="display-5">¿Por qué elegir Banco JWT?</h2>
+        <p>Ofrecemos una experiencia única, enfocada en tus necesidades financieras, con herramientas innovadoras y un servicio excepcional.</p>
+        <button class="btn btn-success" onclick="location.href='@Url.Page("./Features")'">Descubre nuestras características</button>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container">
+            &copy; 2024 - Banco JWT - Todos los derechos reservados
+        </div>
+    </footer>
+</div>
