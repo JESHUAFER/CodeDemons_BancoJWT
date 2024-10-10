@@ -1,0 +1,61 @@
+﻿@page
+@model bancoJWT.Areas.Identity.Pages.welcomeModel
+@{
+
+    ViewData["Title"] = "Balance General";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center" style="color: #2F2E2E;">Balance General</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg mb-4" style="background-color: #EDF2FA;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #09184D;">Información Financiera Ficticia</h5>
+                    <hr />
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="color: #2F2E2E;">Descripción</th>
+                                    <th style="color: #2F2E2E;">Monto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Saldo Inicial</td>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Depósitos</td>
+                                    <td>$2,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Retiros</td>
+                                    <td>($1,500.00)</td>
+                                </tr>
+                                <tr>
+                                    <td>Intereses</td>
+                                    <td>$50.00</td>
+                                </tr>
+                                <tr class="font-weight-bold">
+                                    <td>Total</td>
+                                    <td>$5,550.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn" style="background-color: #7B5BF2; color: #EDF2FA;" onclick="location.href='@Url.Page("./Transactions")'">Ver Transacciones</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+}

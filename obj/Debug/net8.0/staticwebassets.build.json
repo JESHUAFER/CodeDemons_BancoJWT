@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K+4lSz7eSeUgfupvi8H+4u34wMfC1Xxd7FOkI5yEw94=",
+  "Hash": "RrL+O7P2zAokHSdiNum4WC+6Xl1f97Rhfw1ZbIzy9cU=",
   "Source": "bancoJWT",
   "BasePath": "_content/bancoJWT",
   "Mode": "Default",
@@ -2371,6 +2371,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\OCTAVO SEMESTRE\\ANALISIS DE SISTEMAS\\CodeDemonsJWT\\bancoJWT\\wwwroot\\media\\10507049.png",
+      "SourceId": "bancoJWT",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OCTAVO SEMESTRE\\ANALISIS DE SISTEMAS\\CodeDemonsJWT\\bancoJWT\\wwwroot\\",
+      "BasePath": "_content/bancoJWT",
+      "RelativePath": "media/10507049.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\10507049.png"
     },
     {
       "Identity": "D:\\OCTAVO SEMESTRE\\ANALISIS DE SISTEMAS\\CodeDemonsJWT\\bancoJWT\\wwwroot\\media\\banco.png",

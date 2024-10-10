@@ -7,47 +7,50 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #0083c5; height: 100vh;">
+        <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #09184D; height: 70vh;">
             <div class="text-white text-center">
-                <img src="~/ruta/a/tu/imagen.jpg" alt="Descripción de la imagen" class="img-fluid mb-3" style="max-width: 80%;" />
+                <img src="~/media/banco.png" alt="Descripción de la imagen" class="img-fluid mb-3" style="max-width: 95%;" />
                 <h2>Crea tu nueva cuenta</h2>
                 <p>Cuenta Monetaria y de Ahorro desde tu banca en Línea.</p>
-                <button class="btn btn-warning" onclick="location.href='@Url.Page("./Register")'">Conoce más</button>
+                <button class="btn" style="background-color: #7B5BF2; color: #EDF2FA;" onclick="location.href='@Url.Page("./Register")'">Conoce más</button>
+               
             </div>
         </div>
 
         <div class="col-md-6 d-flex justify-content-center align-items-center">
             <section>
-                <form id="account" method="post" class="p-4 border rounded shadow-lg" style="width: 400px;">
-                    <h2 class="text-center">Iniciar sesión</h2>
+                <form id="account" method="post" class="p-4 border rounded shadow-lg" style="width: 400px; background-color: #EDF2FA;">
+                    <h2 class="text-center text-dark">Iniciar sesión</h2>
                     <hr />
                     <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                     <div class="form-group mb-3">
-                        <label asp-for="Input.Email" class="form-label">Email</label>
+                        <label asp-for="Input.Email" class="form-label text-dark">Email</label>
                         <input asp-for="Input.Email" class="form-control" placeholder="name@example.com" />
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
                     <div class="form-group mb-3">
-                        <label asp-for="Input.Password" class="form-label">Contraseña</label>
+                        <label asp-for="Input.Password" class="form-label text-dark">Contraseña</label>
                         <input asp-for="Input.Password" class="form-control" placeholder="Contraseña" />
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
                     <div class="form-check mb-3">
                         <input class="form-check-input" asp-for="Input.RememberMe" />
-                        <label asp-for="Input.RememberMe" class="form-check-label">Recordarme</label>
+                        <label asp-for="Input.RememberMe" class="form-check-label text-dark">Recordarme</label>
                     </div>
                     <div>
-                        <button id="login-submit" type="submit" class="w-100 btn btn-primary">Iniciar sesión</button>
+                        <!---<button id="login-submit" type="submit" class="w-100 btn" style="background-color: #7B5BF2; color: #EDF2FA;">Iniciar sesión</button>-->
+                        <a asp-area="Identity" asp-page="/Welcome" class="w-100 btn btn-lg btn-primary" id="login-submit">Iniciar sesión</a>
+
                     </div>
                     <div class="mt-3 text-center">
                         <p>
-                            <a id="forgot-password" asp-page="./ForgotPassword">Olvidaste tu contraseña?</a>
+                            <a id="forgot-password" class="text-dark" asp-page="./ForgotPassword">Olvidaste tu contraseña?</a>
                         </p>
                         <p>
-                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Registrar un nuevo usuario</a>
+                            <a class="text-dark" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Registrar un nuevo usuario</a>
                         </p>
                         <p>
-                            <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Reenviar confirmación de correo</a>
+                            <a id="resend-confirmation" class="text-dark" asp-page="./ResendEmailConfirmation">Reenviar confirmación de correo</a>
                         </p>
                     </div>
                 </form>
@@ -59,3 +62,21 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<style>
+    body {
+        background-color: #EDF2FA; /* Fondo */
+    }
+
+    .btn {
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #6F4B8D; /* Color al pasar el mouse */
+        }
+
+    .text-danger {
+        color: #d1b68d; /* Color de los mensajes de error */
+    }
+</style>

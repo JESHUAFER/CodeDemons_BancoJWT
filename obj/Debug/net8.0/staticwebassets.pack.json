@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\OCTAVO SEMESTRE\\ANALISIS DE SISTEMAS\\CodeDemonsJWT\\bancoJWT\\wwwroot\\media\\10507049.png",
+      "PackagePath": "staticwebassets\\media\\10507049.png"
+    },
+    {
       "Id": "D:\\OCTAVO SEMESTRE\\ANALISIS DE SISTEMAS\\CodeDemonsJWT\\bancoJWT\\wwwroot\\media\\banco.png",
       "PackagePath": "staticwebassets\\media\\banco.png"
     },

@@ -1,14 +1,15 @@
 ﻿@page
 @model RegisterModel
+
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Registrar";
 }
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #0083c5; height: 100vh;">
+        <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #09184D; height: 70vh;">
             <div class="text-white text-center">
-                <img src="~/ruta/a/tu/imagen.jpg" alt="Descripción de la imagen" class="img-fluid mb-3" style="max-width: 80%;" />
+                <img src="~/media/banco.png" alt="Descripción de la imagen" class="img-fluid mb-3" style="max-width: 95%;" />
                 <h2>Crea una nueva cuenta</h2>
                 <p>Completa el formulario a continuación para registrarte.</p>
             </div>
@@ -16,26 +17,30 @@
 
         <div class="col-md-6 d-flex justify-content-center align-items-center">
             <div>
-                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="p-4 border rounded shadow-lg" style="width: 400px;">
-                    <h2 class="text-center">Registrar</h2>
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="p-4 border rounded shadow-lg" style="width: 400px; background-color: #EDF2FA;">
+                    <h2 class="text-center text-dark">Registrar</h2>
                     <hr />
                     <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                    <div class="form-floating mb-3">
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Input.Email" class="text-dark">Email</label>
                         <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                        <label asp-for="Input.Email">Email</label>
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
-                    <div class="form-floating mb-3">
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Input.Password" class="text-dark">Contraseña</label>
                         <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Contraseña" />
-                        <label asp-for="Input.Password">Contraseña</label>
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
-                    <div class="form-floating mb-3">
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Input.ConfirmPassword" class="text-dark">Confirmar contraseña</label>
                         <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirmar contraseña" />
-                        <label asp-for="Input.ConfirmPassword">Confirmar contraseña</label>
                         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                     </div>
-                    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Registrar</button>
+
+                    <button id="registerSubmit" type="submit" class="w-100 btn" style="background-color: #7B5BF2; color: #EDF2FA;">Registrar</button>
                 </form>
             </div>
         </div>
@@ -45,3 +50,22 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<style>
+    body {
+        background-color: #EDF2FA; /* Fondo */
+    }
+
+    .btn {
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #6F4B8D; /* Color al pasar el mouse */
+        }
+
+    .text-danger {
+        color: #d1b68d; /* Color de los mensajes de error */
+    }
+</style>
+

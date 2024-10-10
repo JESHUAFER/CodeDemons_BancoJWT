@@ -1,13 +1,16 @@
 ﻿@page
 @model ResendEmailConfirmationModel
+
 @{
     ViewData["Title"] = "Reenviar confirmación de correo";
 }
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #0083c5; height: 100vh;">
+        <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #09184D; height: 90vh;">
             <div class="text-white text-center">
+                <img src="~/media/10507049.png" alt="Descripción de la imagen" class="img-fluid mb-3" style="max-width: 95%;" />
+
                 <h2>¿No recibiste el correo de confirmación?</h2>
                 <p>Ingresa tu correo electrónico para reenviar el mensaje de confirmación.</p>
             </div>
@@ -15,17 +18,17 @@
 
         <div class="col-md-6 d-flex justify-content-center align-items-center">
             <section>
-                <form method="post" class="p-4 border rounded shadow-lg" style="width: 400px;">
-                    <h2 class="text-center">Reenviar confirmación de correo</h2>
+                <form method="post" class="p-4 border rounded shadow-lg" style="width: 400px; background-color: #EDF2FA;">
+                    <h2 class="text-center" style="color: #2F2E2E;">Reenviar confirmación de correo</h2>
                     <hr />
                     <div asp-validation-summary="All" class="text-danger" role="alert"></div>
                     <div class="form-group mb-3">
-                        <label asp-for="Input.Email" class="form-label">Correo electrónico</label>
+                        <label asp-for="Input.Email" class="form-label" style="color: #2F2E2E;">Correo electrónico</label>
                         <input asp-for="Input.Email" class="form-control" placeholder="name@example.com" />
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
                     <div>
-                        <button type="submit" class="w-100 btn btn-primary">Reenviar</button>
+                        <button type="submit" class="w-100 btn" style="background-color: #7B5BF2; color: #EDF2FA;">Reenviar</button>
                     </div>
                 </form>
             </section>
@@ -36,3 +39,21 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<style>
+    body {
+        background-color: #51445F; /* Fondo general */
+    }
+
+    .btn {
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #6F4B8D; /* Color al pasar el mouse */
+        }
+
+    .text-danger {
+        color: #d1b68d; /* Color de los mensajes de error */
+    }
+</style>
