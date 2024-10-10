@@ -273,3 +273,4 @@ D:\OCTAVO SEMESTRE\ANALISIS DE SISTEMAS\CodeDemonsJWT\bancoJWT\bin\Debug\net8.0\
 D:\OCTAVO SEMESTRE\ANALISIS DE SISTEMAS\CodeDemonsJWT\bancoJWT\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 D:\OCTAVO SEMESTRE\ANALISIS DE SISTEMAS\CodeDemonsJWT\bancoJWT\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 D:\OCTAVO SEMESTRE\ANALISIS DE SISTEMAS\CodeDemonsJWT\bancoJWT\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\OCTAVO SEMESTRE\ANALISIS DE SISTEMAS\CodeDemonsJWT\bancoJWT\obj\Debug\net8.0\bancoJWT.sourcelink.json

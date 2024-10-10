@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bancoJWT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a33d136105307254c53a021057f881e823c1fa2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("bancoJWT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bancoJWT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
